@@ -6,3 +6,4 @@ port:
 user:
   jenkins:
     exists: true
+    home: /home/jenkins
