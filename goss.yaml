@@ -3,3 +3,6 @@ port:
     listening: true
     ip:
     - 0.0.0.0
+user:
+  jenkins:
+    exists: true
