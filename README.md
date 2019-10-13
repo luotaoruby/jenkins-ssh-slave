@@ -5,6 +5,14 @@
 ![Docker build](https://img.shields.io/docker/build/luotaoruby/jenkins-ssh-slave)
 ![Docker Pulls](https://img.shields.io/docker/pulls/luotaoruby/jenkins-ssh-slave)
 
+## Use image
+
+```
+docker pull luotaoruby/jenkins-ssh-slave:latest
+```
+
+## Development
+
 build
 
 ```
