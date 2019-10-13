@@ -16,5 +16,5 @@ jobs:
     - name: Build docker image
       run: docker build . -t luotaoruby/jenkins-ssh-slave
     - name: Run goss tests
-      run: dgoss run -t luotaoruby/jenkins-ssh-slave
+      run: /home/runner/bin/dgoss run -t luotaoruby/jenkins-ssh-slave
 
