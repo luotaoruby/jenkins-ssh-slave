@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install goss
-      run: curl -fsSL https://goss.rocks/install | GOSS_VER=v0.3.6 GOSS_DST=~/bin sh
+      run: mkdir -p ~/bin && curl -fsSL https://goss.rocks/install | GOSS_VER=v0.3.6 GOSS_DST=~/bin sh
     - name: Build docker image
       run: docker build . -t luotaoruby/jenkins-ssh-slave
     - name: Run goss tests
