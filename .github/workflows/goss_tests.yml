@@ -1,4 +1,4 @@
-name: goss_tests
+name: tests
 
 on: [push]
 
@@ -12,7 +12,7 @@ jobs:
     - name: Install goss
       run: mkdir -p ~/bin && curl -fsSL https://goss.rocks/install | GOSS_VER=v0.3.6 GOSS_DST=~/bin sh
     - name: Export $PATH
-      run: export $PATH="/home/runner/bin:${PATH}"
+      run: export PATH="/home/runner/bin:${PATH}"
     - name: Build docker image
       run: docker build . -t luotaoruby/jenkins-ssh-slave
     - name: Run goss tests
